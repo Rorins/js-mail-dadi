@@ -17,3 +17,17 @@ if (accessGranted === true){
 } else {
     alert("Access denied")
 }
+
+/*Numeri generati per giocatore e computer */
+const playerScore = Math.floor(Math.random() * 6) + 1;
+const computerScore = Math.floor(Math.random() * 6) + 1;
+console.log(`Your score is ${playerScore}, your opponent's is ${computerScore}`)
+
+/*Se giocatore ha score più alto vince, se più basso perde altrimenti pareggia */
+if (playerScore > computerScore){
+    alert("You Win!")
+} else if (playerScore < computerScore){
+    alert("You Lose!")
+} else {
+    alert("Draw")
+}
